@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{%block title%}LED Demo{%endblock%}
+
+{% block content %}
+
+	<table align="center" class="TB_center">
+		<tr>
+			<td>
+				<form  action="/" method="POST"  >
+					<input class="border_img" type="image" width="320" height="240" src="{{ url_for('static', filename='image/led.jpg') }}" ></input>
+					<input type="sumbit" size="4" name="led" value="on" hidden="true" />
+				</form>
+			</td>
+
+			<td>
+				<form  action="/" method="POST" >
+					<input class="border_img" type="image" width="320" height="240" src="{{ url_for('static', filename='image/led.jpg') }}" ></input>
+					<input type="sumbit" size="4" name="led" value="off" hidden="true"/>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<p id="demo"></p>
+
+{% endblock %}
+
+{%block script%}
+{%endblock%}
