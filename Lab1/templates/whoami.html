@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whoami</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">l
+</head>
+<body>
+	<h1>{{user.name}}<h1>	
+	{%for i in posts%}
+	<p>{{i.author.authorname}}</p>
+	{%endfor %}
+</body>
+</html>
