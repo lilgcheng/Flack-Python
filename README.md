@@ -12,3 +12,5 @@ static 存放css,js
   .static
   run.py
 </pre>
+
+<a href="http://docs.jinkan.org/docs/flask/installation.html#installation">flask python 文檔</a>
